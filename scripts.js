@@ -19,7 +19,7 @@
 
 
 var questions = [
-  { question: "👉 Enter your email here 👈", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
+  { question: "👉 Enter Your Email Here 👈", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
   { question: "👉 Enter your first name 👈" },
   { question: "What's your last name?" },
   // {question:"Create your password", type: "password"}

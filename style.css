@@ -7,7 +7,7 @@ body {
     margin: 0;
     /* background: #25A3FF; */
     background: black;
-    /* background-image: url("https://i.imgur.com/BCkufRz.jpg"); */
+    background-image: url("images/new-js-banner.jpg");
     background-repeat: no-repeat;
     /* background-size: auto; */
     /* background-size: 1600px 900px; */
@@ -167,6 +167,3 @@ body {
   font-weight: 700;
   color: black;
 }
-
-div.parentElement{text-align: center;}
-.btn{ display: inline-block; }
