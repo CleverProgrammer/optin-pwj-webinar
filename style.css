@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500&display=swap');
+
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    /* background: #25A3FF; */
+    background: black;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+  
+  h1 {
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    transition: .8s ease-in-out;
+  }
+
+  h2 {
+    color: white;
+    padding: 30px ;
+  }
+  
+  #progress {
+    position: absolute;
+    background: #0069ec;
+    height: 100vh;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .center {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /******
+    Form
+   ******/
+  
+  #register {
+    background: #fff;
+    position: relative;
+    width: 410px;
+    padding: 2px 15px 20px 15px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    transition: transform .1s ease-in-out;
+  }
+
+  #wistia_video {
+    background: black;
+    position: relative;
+    width: 410px;
+    margin: 20px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    transition: transform .1s ease-in-out;
+  }
+  
+  #register.close {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .8s ease-in-out;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0);
+  }
+  
+  .next {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    color: #25a3ff;
+    float: right;
+    cursor: pointer;
+  }
+  .next:hover {color: #333}
+  .wrong .next {color: #ff2d26}
+  .close .next {color: #fff}
+  
+  #inputContainer {
+    position: relative;
+    opacity: 0;
+    width: 350px;
+    margin-top: 25px;
+    transition: opacity .3s ease-in-out;
+  }
+  
+  #inputContainer input {
+    width: 100%;
+    padding: 0 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    background: transparent;
+    box-shadow:none;
+  }
+  
+  #inputLabel {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+    transition: .2s ease-in-out;
+  }
+  
+  #inputContainer input:valid + #inputLabel {
+    top: -15px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #9e9e9e;
+  }
+  
+  #inputProgress {
+    position: absolute;
+    border-bottom: 2px solid #25a3ff;
+    padding: 3px 0;
+    width: 0;
+    transition: width .6s ease-in-out;
+  }
+  
+  .wrong #inputProgress {
+    border-color: #ff2d26;
+  }
+
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
