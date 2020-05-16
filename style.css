@@ -7,10 +7,11 @@ body {
     margin: 0;
     /* background: #25A3FF; */
     background: black;
-    background-image: url("https://i.imgur.com/BCkufRz.jpg");
+    /* background-image: url("https://i.imgur.com/BCkufRz.jpg"); */
     background-repeat: no-repeat;
-    background-size: auto;
-    background-size: 1600px 900px;
+    /* background-size: auto; */
+    /* background-size: 1600px 900px; */
+    background-size: cover;
     /* font-family: 'Roboto', sans-serif; */
   }
   
@@ -154,3 +155,18 @@ body {
     width: 100%;
   }
 }
+
+.btn {
+  /* size: 100px; */
+  /* width: 400px; */
+  /* height: 45px; */
+  height: 40px;
+  font-size: 2em;
+  text-align: center;
+  background-color: #ff9800;
+  font-weight: 700;
+  color: black;
+}
+
+div.parentElement{text-align: center;}
+.btn{ display: inline-block; }
