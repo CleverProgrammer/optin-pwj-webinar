@@ -19,9 +19,9 @@
 
 
 var questions = [
+  { question: "👉 Enter your email here 👈", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
   { question: "👉 Enter your first name 👈" },
   { question: "What's your last name?" },
-  { question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
   // {question:"Create your password", type: "password"}
 ]
 
@@ -81,7 +81,7 @@ var questions = [
 
       // add the h1 at the end with the welcome text
       var h1 = document.createElement('h1')
-      h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'))
+      h1.appendChild(document.createTextNode('Welcome ' + questions[1].value + '!'))
       setTimeout(function () {
         register.parentElement.appendChild(h1)
         setTimeout(function () { h1.style.opacity = 1 }, 50)
